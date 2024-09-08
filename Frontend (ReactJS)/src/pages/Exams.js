@@ -18,13 +18,10 @@ const Exams = ({}) => {
 
     return (
         <div>
-            <div className="exam-list">
-                <h2 className="exam-list-title">Exams for class {classId}:</h2>
-                <ExamList
-                    exams={exams}
-                />
-            </div>
-            <GoBackButton/>
+            <h2 className="exam-list-title">Exams for class {classId}:</h2>
+            <ExamList
+                exams={exams}
+            />
         </div>
     )
 }

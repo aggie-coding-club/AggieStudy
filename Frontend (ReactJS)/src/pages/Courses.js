@@ -43,7 +43,6 @@ const Courses = () => {
                     />
                 </section>
             </div>
-            <Footer />
         </div>
     );
 };

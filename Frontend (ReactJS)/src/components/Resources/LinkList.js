@@ -18,10 +18,9 @@ const LinkList = ({links}) => {
                     </NavLink>
                 </li>
             ))}
+            <GoBackButton/>
         </ul>
-
     );
-
 }
 
 export default LinkList;

@@ -7,7 +7,7 @@ const Resources = ({ classId }) => {
         <section className="resources-container">
             <ul className="resources-list">
                 <Link to={`${classId}/exams`} className="resource-item">Practice Exams</Link><br></br>
-                <Link to={`${classId}/links`} className="resource-item">Tutorials</Link>
+                <Link to={`${classId}/links`} className="resource-item">Study Materials</Link>
             </ul>
         </section>
     );

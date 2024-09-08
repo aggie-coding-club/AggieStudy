@@ -2,8 +2,6 @@ import React from "react";
 import useLinks from "../hooks/useExams";
 import { useParams } from "react-router-dom";
 import LinkList from "../components/Resources/LinkList";
-import Footer from "../components/Footer/Footer";
-import GoBackButton from "../components/Utils/GoBackButton";
 
 
 const Links = ({}) => {
@@ -25,7 +23,6 @@ const Links = ({}) => {
                     links={links}
                 />
             </div>
-            <GoBackButton/>
         </div>
     )
 }
