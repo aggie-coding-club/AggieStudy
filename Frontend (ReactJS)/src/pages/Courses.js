@@ -3,7 +3,6 @@ import useCourses from "../hooks/useCourses";
 import useCourseSearch from "../hooks/useCourseSearch";
 import CourseList from '../components/Courses/CourseList';
 import SearchBar from '../components/Courses/SearchBar';
-import Footer from '../components/Footer/Footer';
 import './Courses.css';
 
 const Courses = () => {
