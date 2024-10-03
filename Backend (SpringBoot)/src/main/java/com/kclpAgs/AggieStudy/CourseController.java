@@ -26,6 +26,11 @@ public class CourseController {
         return course.orElse(null);
     }
 
+    @GetMapping("/topic/{topic}")
+    public List<Course> getCoursesByTopic(@PathVariable String topic) {
+        return courseService.getCoursesByTopic(topic);
+    }
+
     @GetMapping("/search")
     public List<Course> searchCourses(@RequestParam String query) {
         return courseService.searchCourses(query);

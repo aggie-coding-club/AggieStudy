@@ -18,6 +18,10 @@ public class CourseService {
         return courseRepository.findAll();
     }
 
+    public List<Course> getCoursesByTopic(String topic){
+        return courseRepository.findByTopic(topic)
+    }
+
     public Optional<Course> getCourseById(String id) {
         return courseRepository.findById(id);
     }
@@ -31,8 +35,14 @@ public class CourseService {
     }
 
     public Course updateCourse(String id, Course course) {
-        course.setId(id); // Ensure the ID in the URL is used
-        return courseRepository.save(course);
+        Course existingCourse = courseRepository.findById(id)
+            .orElseThrow(() -> new ResourceNotFoundException("Course not found with id " + id));
+        
+        existingCourse.setName(course.getName());
+        existingCourse.setDescription(course.getDescription());
+        existingCourse.setTopic(course.getTopic());
+        
+        return courseRepository.save(existingCourse);
     }
 
     public List<Course> searchCourses(String query) {
