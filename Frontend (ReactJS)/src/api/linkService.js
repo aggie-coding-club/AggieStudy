@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = 'http://localhost:8080/links';
+const API_BASE_URL = 'https://aggie-study-45ef20d60435.herokuapp.com/links';
 
 export const getLinks = () => {
     return axios.get(API_BASE_URL);

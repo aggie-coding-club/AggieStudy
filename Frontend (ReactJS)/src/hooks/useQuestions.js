@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {getQuestionsByExamId} from "../api/individualExamService";
+import {getQuestionsByExamId} from "../api/examService";
 
 const useQuestions = (examId) => {
     const [questions, setQuestions] = useState([]);
