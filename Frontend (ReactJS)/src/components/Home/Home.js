@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import Footer from '../components/Footer/Footer';
 
 const Home = () => {
     const [activeFeature, setActiveFeature] = useState(null);
@@ -27,22 +26,22 @@ const Home = () => {
     return (
         <div className="home">
             <section className="hero">
-                <h1>AggieStudy</h1>
+                <h1>Welcome to AggieStudy</h1>
                 <p className="mission">The ultimate study companion for Texas A&M students</p>
                 <Link to="/courses" className="cta-button">Get Started</Link>
             </section>
 
             <section className="stats">
                 <div className="stat-item">
-                    <h2>1,000+</h2>
+                    <h2>1000+</h2>
                     <p>Study Questions</p>
                 </div>
                 <div className="stat-item">
-                    <h2>0+</h2>
+                    <h2>500+</h2>
                     <p>Active Users</p>
                 </div>
                 <div className="stat-item">
-                    <h2>2+</h2>
+                    <h2>50+</h2>
                     <p>Courses Covered</p>
                 </div>
             </section>

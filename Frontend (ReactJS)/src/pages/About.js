@@ -1,12 +1,10 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import './About.css';
-import Footer from '../components/Footer/Footer';
 
 const About = () => {
     const teamMembers = [
-        { name: "Cameron Stone", role: "Full-Stack Developer", image: "" },
-        { name: "Lucas Bryant", role: "Full-Stack Developer", image: "" },
+        { name: "Cameron Stone", role: "Full-Stack Developer", image: "" }
     ];
 
     return (
@@ -60,7 +58,6 @@ const About = () => {
                     </NavLink>
                 </section>
             </div>
-            <Footer/>
         </div>
     );
 };

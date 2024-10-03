@@ -9,7 +9,7 @@ const useExams = (classId) => {
     const [error, setError] = useState(null);
 
 
-    //fetch courses from the api
+    //fetch exams from the api
     useEffect(() => {
 
         if (!classId) return;

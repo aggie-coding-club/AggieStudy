@@ -7,23 +7,13 @@ const GoBackButton = () => {
     const location = useLocation();
 
     const handleGoBack = () => {
-        const pathParts = location.pathname.split('/').filter(Boolean);
+        const pathParts = location.pathname.split('/');
 
-        switch (pathParts.length) {
-            case 2: // /courses
-                navigate('/');
-                break;
-            case 3: // /courses/:classId/exams or /courses/:classId/links
-                navigate('/courses');
-                break;
-            case 4: // /courses/:classId/exams/:examId
-                navigate(`/courses/${pathParts[1]}/exams`);
-                break;
-            case 6: // /courses/:classId/exams/:examId/questions/:questionId
-                navigate(`/courses/${pathParts[1]}/exams/${pathParts[3]}`);
-                break;
-            default:
-                navigate(-1); // Default to browser's back behavior
+        if(pathParts[1] === "courses" && pathParts[3] === "questions") {
+            navigate(`/courses/${pathParts[2]}`);
+        }
+        else if(pathParts[1] === "courses" && pathParts.length === 3){
+            navigate(`/courses`);
         }
     };
 
