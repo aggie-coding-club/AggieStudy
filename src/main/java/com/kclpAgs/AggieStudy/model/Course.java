@@ -10,7 +10,6 @@ public class Course {
 
     private String name;
     private String description;
-    private String subject;
 
     public Course(){}
 
@@ -20,14 +19,6 @@ public class Course {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getSubject() {
-        return subject;
-    }
-
-    public void setSubject(String subject) {
-        this.subject = subject;
     }
 
     public String getName() {
