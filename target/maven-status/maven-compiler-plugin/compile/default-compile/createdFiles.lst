@@ -1,0 +1,5 @@
+com\kclpAgs\AggieStudy\AggieStudyApplication.class
+com\kclpAgs\AggieStudy\model\Course.class
+com\kclpAgs\AggieStudy\service\CourseService.class
+com\kclpAgs\AggieStudy\repo\CourseRepo.class
+com\kclpAgs\AggieStudy\CourseController.class
