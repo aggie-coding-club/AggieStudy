@@ -9,7 +9,7 @@ const ExamList = ({exams}) => {
     }
 
     return (
-        <ul className="exam-list">
+        <div className="exam-list">
             {exams.map(exam => (
                 <li key={exam.id} className="exam-list-item">
                     <NavLink to={`${exam.id}`}>
@@ -18,8 +18,7 @@ const ExamList = ({exams}) => {
                     </NavLink>
                 </li>
             ))}
-            <GoBackButton/>
-        </ul>
+        </div>
 
     );
 

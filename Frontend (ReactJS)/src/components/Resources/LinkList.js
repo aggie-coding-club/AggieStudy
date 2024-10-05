@@ -18,7 +18,6 @@ const LinkList = ({links}) => {
                     </NavLink>
                 </li>
             ))}
-            <GoBackButton/>
         </ul>
     );
 }

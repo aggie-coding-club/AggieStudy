@@ -22,6 +22,7 @@ const Exams = ({}) => {
             <ExamList
                 exams={exams}
             />
+            <GoBackButton/>
         </div>
     )
 }
