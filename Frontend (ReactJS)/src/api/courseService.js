@@ -10,8 +10,8 @@ export const getCourseById = (id) => {
     return axios.get(`${API_BASE_URL}/${id}`);
 };
 
-export const getCoursesByTopic = (topic) => {
-    return axios.get(`${API_BASE_URL}/topics/${topic}`);
+export const getCoursesBySubject = (subject) => {
+    return axios.get(`${API_BASE_URL}/subject/${subjectt}`);
 };
 
 export const addCourse = (course) => {
